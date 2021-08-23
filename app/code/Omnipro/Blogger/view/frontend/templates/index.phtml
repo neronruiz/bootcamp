@@ -7,7 +7,7 @@
 </div>
 
 <div id="template">
-  <h1>&bull; Keep in Touch &bull;</h1>
+  <h1>&bull; My spectacular blog &bull;</h1>
   <div class="underline">
   </div>
   <div class="icon_wrapper">
@@ -17,15 +17,23 @@
     </svg>
   </div>
   <form action="#" method="post" id="contact_form">
-    <div class="name">
+    <div class="my post title">
       <label for="name"></label>
-      <input type="text" placeholder="My name is" name="name" id="name_input" required>
+      <input type="text" placeholder="my post title" name="post_title" id="name_input" required>
+    </div>
+    <button (click)="">Save post</button>
+    <div class="post">
+      <label for="post"></label>
+      <textarea name="post" placeholder="Here all my important post text" id="post" cols="30" rows="5" required></textarea>
     </div>
     <div class="email">
       <label for="email"></label>
       <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
     </div>
-    <div class="telephone">
+    <button (click)="">Upload image</button>
+
+
+    <!--<div class="telephone">
       <label for="name"></label>
       <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
     </div>
@@ -44,6 +52,6 @@
     </div>
     <div class="submit">
       <input type="submit" value="Send Message" id="form_button" />
-    </div>
-  </form><!-- // End form -->
-</div><!-- // End #container -->
+    </div>-->
+  </form>
+</div>
