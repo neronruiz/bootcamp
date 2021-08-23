@@ -21,20 +21,14 @@ interface PublicationRepositoryInterface
 
    
    /**
-    * @param string $publication_id
-    * @return mixed
+    * @param int $publication_id
+    * @return PublicationInterface
     */
     public function getById($publication_id);
 
     /**
-     * @param PublicationInterface $publication
-     * @return PublicationInterface
-     */
-    public function delete(PublicationInterface $publication);
-
-    /**
-     * @param string $publication_id
-     * @return mixed
+     * @param int $publication_id
+     * @return bool
      */
     public function deleteById($publication_id);
 }
