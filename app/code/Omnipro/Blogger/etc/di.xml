@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Omnipro\Blogger\Api\PublicationRepositoryInterface" type="Omnipro\Blogger\Model\PublicationRepository"/>
+    <preference for="Omnipro\Blogger\Api\Data\PublicationInterface" type="Omnipro\Blogger\Model\Publication"/>
+    <preference for="Omnipro\Blogger\Api\Data\PublicationSearchResultInterface" type="Omnipro\Blogger\Model\PublicationSearchResult"/>
+</config>
