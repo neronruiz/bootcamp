@@ -3,11 +3,7 @@
 /** @var \Omnipro\Blogger\Block\Template $block */
 ?>
 
-<div class="template">
-  <h1><?= $block->getName() ?></h1>
-</div>
-
-<div id="template">
+<!--<div id="template">
   <h1>&bull; My spectacular blog &bull;</h1>
   <div class="underline">
   </div>
@@ -47,40 +43,43 @@
       </div>
     </div>
 
-    <button cols="4" rows="2" (click)="">Upload image</button>
+    <button cols="4" rows="2" (click)="">Upload image</button>-->
 
 
-    <div class="card">
-      <div class="card-body">
-        <div class="form-row align-items-center">
-          <div class="col-md 9">
-            <label class="sr-only" for="inlineFormInput"></label>
-            <input type="text" class="form-control mb-2" id="post_title" placeholder="my post title">
-          </div>
-          <div class="col-md 3">
-            <button type="submit" class="btn btn-primary mb-2">save post</button>
-          </div>
-        </div>
-
-        <div class="form-row align-items-center">
-          <div class="col-md 12">
-            <label class="sr-only" for="inlineFormInput"></label>
-            <input type="text" class="form-control " id="post" placeholder="Here all my important post text">
-          </div>
-        </div>
-
-        <div class="form-row align-items-center">
-          <label for="colFormLabelSm" class="col-md-9 col-form-label col-form-label-sm">Email</label>
-          <div class="col-md-9">
-            <input type="email" class="form-control " id="email" placeholder="Email Addres">
-          </div>
-
-          <div class="col-md 3">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-          </div>
-        </div>
+<div class="card">
+  <div class="card-body">
+    <div class="form-row align-items-center">
+      <div class="col-md 9">
+        <label class="sr-only" for="inlineFormInput"></label>
+        <input type="text" class="form-control mb-2" id="post_title" placeholder="my post title">
+      </div>
+      <div class="col-md 3">
+        <button type="submit" class="btn btn-primary mb-2">save post</button>
       </div>
     </div>
 
-  </form>
+    <div class="form-row align-items-center">
+      <div class="col-md 12">
+        <label class="sr-only" for="inlineFormInput"></label>
+        <input type="text" class="form-control " id="post" placeholder="Here all my important post text">
+      </div>
+    </div>
+
+    <div class="form-row align-items-center">
+      <label for="colFormLabelSm" class="col-md-9 col-form-label col-form-label-sm">Email</label>
+      <div class="col-md-9">
+        <input type="email" class="form-control " id="email" placeholder="Email Addres">
+      </div>
+
+      <div class="col-md 3">
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </div>
+
+      <label class="form-label" for="customFile">Default file input example</label>
+      <input type="file" class="form-control" id="customFile" />
+    </div>
+  </div>
+</div>
+
+</form>
 </div>
