@@ -3,4 +3,33 @@
     <preference for="Omnipro\Blogger\Api\PublicationRepositoryInterface" type="Omnipro\Blogger\Model\PublicationRepository"/>
     <preference for="Omnipro\Blogger\Api\Data\PublicationInterface" type="Omnipro\Blogger\Model\Publication"/>
     <preference for="Omnipro\Blogger\Api\Data\PublicationSearchResultInterface" type="Omnipro\Blogger\Model\PublicationSearchResult"/>
+    <virtualType name="Omnipro\Bloger\Model\ResourceModel\Publication\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">omnipro_blogger</argument>
+            <argument name="resourceModel" xsi:type="string">"Omnipro\Blogger\Model\ResourceModel\Publication\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="omnipro_blogger_listing_data_source" xsi:type="string">Omnipro\Blogger\Model\ResourceModel\Publication\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Omnipro\Blogger\BloggerImageUpload" type="Omnipro\Blogger\Model\ImageUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="string">omnipro/blogger/tmp</argument>
+            <argument name="basePath" xsi:type="string">omnipro/blogger</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="png" xsi:type="string">png</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Omnipro\Blogger\Controller\Adminhtml\Blogger\FileUploader\Save">
+        <arguments>
+            <argument name="imageUploader" xsi:type="object">Omnipro\Blogger\BloggerImageUpload</argument>
+        </arguments>
+    </type>
 </config>

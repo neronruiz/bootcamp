@@ -3,9 +3,7 @@ namespace Omnipro\Blogger\Model\ResourceModel\Publication;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
-    protected $_idFieldName = 'post_id';
-    protected $_eventPrefix = 'omnipro_blogger_publication_collection';
-    protected $_eventObject = 'publication_collection';
+    protected $_idFieldName = "id";
 
     /**
      * Define the resource model & the model.
@@ -14,6 +12,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
      */
     protected function _construct()
     {
-        $this->_init('Omnipro\Blogger\Model\Publication', 'Omnipro\Blogger\Model\ResourceModel\Publication');
+        $this->_init(\Omnipro\Blogger\Model\Post::class, \Omnipro\Blogger\Model\ResourceModel\Post::class);
+        $this->_map["fields"]["id"] = "main_table.id";
     }
 }

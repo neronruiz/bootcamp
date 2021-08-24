@@ -5,8 +5,8 @@
         <column xsi:type="varchar" name="post_title" nullable="false" comment="POST_TITLE" />
         <column xsi:type="varchar" name="post_content" nullable="false" comment="POST_CONTENT" />
         <column xsi:type="varchar" name="image_url" nullable="true" default="https://www.alldaydr.com/app/images/no_image.png" comment="POST_IMAGE" />
-        <column xsi:type="varchar" name="author_email" unsigned="false" nullable="false" comment="POST_AUTHOR" />
-        <column xsi:type="timestamp" name="publication_date" on_create="true" nullable="false" comment="" />
+        <column xsi:type="varchar" name="author_email" nullable="false" comment="POST_AUTHOR" />
+        <column xsi:type="timestamp" name="publication_date" onCreate="true" nullable="false" default="CURRENT_TIMESTAMP" comment="" />
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="post_id" />
         </constraint>

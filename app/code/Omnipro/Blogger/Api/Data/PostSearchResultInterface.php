@@ -2,13 +2,13 @@
 namespace Omnipro\Blogger\Api\Data;
 
 use Magento\Framework\Api\Search\SearchResultInterface;
-use Omnipro\Blogger\Api\Data\PublicationInterface;
+use Omnipro\Blogger\Api\Data\PostInterface;
 
-interface PublicationSearchResultInterface extends SearchResultInterface
+interface PostSearchResultInterface extends SearchResultInterface
 {
     /**
      * getPosts
-     * @return PublicationInterface[]
+     * @return PostInterFace[]
      */
     public function getPosts();
 
